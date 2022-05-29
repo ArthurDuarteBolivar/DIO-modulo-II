@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - aling-content</title>
+    <style>
+        .container{
+            height: 350px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        .item{
+            background: orangered;
+            color: white;
+            padding: 0 5px;
+            flex: 1;
+            text-align: center;
+            margin: 5px;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+    <p>stretch</p>
+   <div class="container stretch">
+       <div class="item">dsajdasb jdajsiddddddddd ddddddd dddddddddddd</div>
+       <div class="item">asddddddd dddddd</div>
+       <div class="item">asddddddddddddd ddddddddd
+       </div>
+       <div class="item">asddddddddd ddddddddd ddddddddddddd</div>
+       <div class="item">asddsadasd</div>
+       <div class="item">asddd dddddddd ddddddddd dddddddddddddd
+       </div> 
+       <div class="item">assss sssssss ssssssssss sssss</div>
+   </div> 
+   <p>Center</p>
+    <div class="container center">
+    <div class="item">dsajdasb jdajsidd ddddddd dddddddd  dddd ddddd</div>
+    <div class="item">asdddddddd ddddd</div>
+    <div class="item">asdddddddd dddddddddddddd
+    </div>
+    <div class="item">asddddddddd ddddddd ddddddddddd dddd</div>
+    <div class="item">asddsadasd</div>
+    <div class="item">asdddddd ddddddd dddddddd ddddddddddddd
+    </div>
+    <div class="item">asssssss sssssssssss ssssssss</div>
+</div> 
+<p>flex-start</p>
+<div class="container flex-start">
+    <div class="item">dsajdasb jdajsiddddddddd ddddddd dddddddddddd</div>
+    <div class="item">asddddddd dddddd</div>
+    <div class="item">asddddddddddddd ddddddddd
+    </div>
+    <div class="item">asddddddddd ddddddddd ddddddddddddd</div>
+    <div class="item">asddsadasd</div>
+    <div class="item">asddd dddddddd ddddddddd dddddddddddddd
+    </div> 
+    <div class="item">assss sssssss ssssssssss sssss</div>
+</div> 
+<p>flex-end</p>
+<div class="container flex-end">
+    <div class="item">dsajdasb jdajsiddddddddd ddddddd dddddddddddd</div>
+    <div class="item">asddddddd dddddd</div>
+    <div class="item">asddddddddddddd ddddddddd
+    </div>
+    <div class="item">asddddddddd ddddddddd ddddddddddddd</div>
+    <div class="item">asddsadasd</div>
+    <div class="item">asddd dddddddd ddddddddd dddddddddddddd
+    </div> 
+    <div class="item">assss sssssss ssssssssss sssss</div>
+</div> 
+<p>space-around</p>
+<div class="container space-around">
+    <div class="item">dsajdasb jdajsiddddddddd ddddddd dddddddddddd</div>
+    <div class="item">asddddddd dddddd</div>
+    <div class="item">asddddddddddddd ddddddddd
+    </div>
+    <div class="item">asddddddddd ddddddddd ddddddddddddd</div>
+    <div class="item">asddsadasd</div>
+    <div class="item">asddd dddddddd ddddddddd dddddddddddddd
+    </div> 
+    <div class="item">assss sssssss ssssssssss sssss</div>
+</div> 
+<p>space-between</p>
+<div class="container space-between">
+    <div class="item">dsajdasb jdajsiddddddddd ddddddd dddddddddddd</div>
+    <div class="item">asddddddd dddddd</div>
+    <div class="item">asddddddddddddd ddddddddd
+    </div>
+    <div class="item">asddddddddd ddddddddd ddddddddddddd</div>
+    <div class="item">asddsadasd</div>
+    <div class="item">asddd dddddddd ddddddddd dddddddddddddd
+    </div> 
+    <div class="item">assss sssssss ssssssssss sssss</div>
+</div> 
+</body>
+</html>
