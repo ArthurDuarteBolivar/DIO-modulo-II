@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - aling-self</title>
+    <style>
+        .container{
+            display: flex;
+            max-width: 4000px;
+            border: 2px solid black;
+            margin-bottom: 20px;
+            height: 100px;
+        }
+        .item{
+            flex: 1;
+            background: purple;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+        }
+        .center{
+            align-self: center;
+        }
+        .start{
+            align-self: flex-start;
+        }
+        .end{
+            align-self: flex-end;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+        .auto{
+            align-self: auto;
+        }
+        .column{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <p>center</p>
+    <div class="container">
+        <div class="item center">center</div>
+        <div class="item center">center</div>
+        <div class="item center">center</div>
+        <div class="item center">center</div>
+    </div>
+    <p>flex-start</p>
+    <div class="container">
+        <div class="item start">start</div>
+        <div class="item start">start</div>
+        <div class="item start">start</div>
+        <div class="item start">start</div>
+    </div>
+    <p>flex-end</p>
+    <div class="container">
+        <div class="item end">end</div>
+        <div class="item end">end</div>
+        <div class="item end">end</div>
+        <div class="item end">end</div>
+    </div>
+    <p>baseline</p>
+    <div class="container">
+        <div class="item baseline">baseline</div>
+        <div class="item baseline">baseline</div>
+        <div class="item baseline">baseline</div>
+        <div class="item baseline">baseline</div>
+    </div>
+    <p>stretch</p>
+    <div class="container">
+        <div class="item stretch">stretch</div>
+        <div class="item stretch">stretch</div>
+        <div class="item stretch">stretch</div>
+        <div class="item stretch">stretch</div>
+    </div>
+    <p>auto</p>
+    <div class="container">
+        <div class="item auto">auto</div>
+        <div class="item auto">auto</div>
+        <div class="item auto">auto</div>
+        <div class="item auto">auto</div>
+    </div>
+    <p>mix</p>
+    <div class="container">
+        <div class="item auto">auto</div>
+        <div class="item start">start</div>
+        <div class="item end">end</div>
+        <div class="item baseline">baseline</div>
+        <div class="item stretch">stretch</div>
+    </div>    
+</body>
+</html>
